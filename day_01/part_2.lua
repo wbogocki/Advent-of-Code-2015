@@ -12,6 +12,10 @@ for i = 1, #content do
     elseif char == ")" then
         down = down + 1
     end
+
+    if up - down == -1 then
+        print("Santa enters the basement on character at position: " .. i)
+    end
 end
 
 print("Floor: " .. up - down)
